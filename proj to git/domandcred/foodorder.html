@@ -1,0 +1,688 @@
+<html>
+    <head>
+        <title>
+            order your faviourites here
+        </title>
+        <script src="scriptfo.js"></script>
+
+        <script src="/frontend/jQuery/jquery-3.7.1.min.js"></script>
+
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+         <!-- Font Awesome -->
+         <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+         rel="stylesheet"
+         />
+         <!-- Google Fonts -->
+         <link
+         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+         rel="stylesheet"
+         />
+         <!-- MDB -->
+         <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.min.css"
+         rel="stylesheet"
+         />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+
+    </head>
+    <style>
+        *{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: black;    
+            color: aliceblue;
+            background-attachment: fixed;
+            }
+    </style>
+
+    <body>
+        
+        <div class="container-fluid " >
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist" >
+                  <a class="nav-link" id="nav-home-tab" href="foodorder.html" role="tab" aria-controls="nav-home" aria-selected="false" style="color: aliceblue;" >Home</a>
+                  <a class="nav-link" id="nav-menu-tab" href="#menudiv" role="tab" aria-controls="nav-menu" aria-selected="false" style="color: aliceblue;" >Menu</a>
+                  <a class="nav-link" id="nav-order-tab" href="#cartfo" role="tab" aria-controls="nav-order" aria-selected="false" style="color: aliceblue;" >Cart</a>
+                </div>           
+            </nav>
+
+            <div class="video-container row">
+                <div class="col mt-5 text-center">
+                    <br><br><br><br><br><br><br>
+                    <P>We can feel your hunger !! order something </P><br><br>
+                <a href="#menudiv">Checkout the menu</a>
+                </div>
+                <div class="col"><br>
+                    <img src="images/123 (1).png" width="600px" >
+
+
+                </div>
+            </div>
+            <hr>
+
+<!-- ===========================================menu========================================================================================================================================= -->
+
+            <h3 class="mt-5 text-center">ORDER YOUR FAVIOURIETS HERE</h3><br>
+
+
+            <div class="container-fluid" >
+    
+    
+    
+                  <div class="row" id="menudiv">
+    
+                    <h2>DRINKS </h2><br><br>
+                    <div class="col-2">
+                      <div  style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/capchno.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                          <h5 class="card-title"> Cappuchino </h5>
+                          <p> 120 /-</p>
+                          <button id="b1" type="button" class="btn btn-primary" onclick="addToCart('Cappuchino',120)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                      
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/exprso.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                          <h5 class="card-title"> Expresso </h5>
+                          <p> 150 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Expresso',150)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                    
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/geenapplejuce.jpg" class="img" style="width: 90px;height: 90px;"/>
+    
+                          <h5 class="card-title"> Green apple juice </h5>
+                          <p> 100 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Greenapplejuice',100)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/ornggjuce.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                          <h5 class="card-title"> Oragne juice</h5>
+                          <p> 100 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Orangejuice',100)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/bluebery juce.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                          
+                          <h5 class="card-title"> Blueberry juice </h5>
+                          <p> 100 /- </p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Blueberryjuice',100)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/bobb.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                          
+                          <h5 class="card-title"> Boba tea </h5>
+                          <p> 120 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Bobatea',120)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                  </div><br><br><br><br><br><br><br>
+      <!-- -------------------------------end of first row--------------------------------- -->
+      
+      
+                  <div class="row">
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/frshmintmojto.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                          <h5 class="card-title"> Mint mojito </h5>
+                          <p> 110 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Mint mojito',110)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/lemnmojito.jpg" class="img" style="width: 90px;height: 90px;"/>
+                          
+                          <h5 class="card-title"> Passoinfruit mojito </h5>
+                          <p> 110 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Passoin fruit mojito',110)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/flda.jpg" class="img" style="width: 90px;height: 90px;"/>  
+      
+                          <h5 class="card-title"> Falooda </h5>
+                          <p> 160 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Falooda',160)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/oreoshk.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+      
+                          <h5 class="card-title"> Oreio shake </h5>
+                          <p> 160 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Oreio shake',160)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/icetea.jpg" class="img" style="width: 90px;height: 90px;"/>
+    
+                          <h5 class="card-title"> Icetea </h5>
+                          <p> 100 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Ice tea',100)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/t.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                          <h5 class="card-title"> Herbal black tea </h5>
+                          <p> 100 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Herbal black tea',100)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                  </div><br><br><br><br><br><br>
+                    <hr>
+    
+      <!-- -------------------------------end of second row--------------------------------- -->
+    
+    
+    
+    
+                  <div class="row">
+    
+                    <h2>STARTERS</h2><br><br>
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/chickensoup.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                          <h5 class="card-title"> Chiken soup </h5>
+                          <p> 160 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Chiken soup',160)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/ff.jpg" class="img" style="width: 90px;height: 90px;"/>
+                          
+                          <h5 class="card-title"> French fries </h5>
+                          <p> 80 /- </p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('French fries',80)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/frdmms.jpg" class="img" style="width: 90px;height: 90px;"/>  
+    
+                          <h5 class="card-title">  Momos (fried) </h5>
+                          <p> 140 /- (4pcs)</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Momos fried',140)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/french toast.jpg" class="img" style="width: 90px;height: 90px;"/>
+    
+                          <h5 class="card-title"> Bread butter </h5>
+                          <p> 90 /- (3pcs)</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Bread butter',90)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/kbb.jpg" class="img" style="width: 90px;height: 90px;"/>
+    
+                          <h5 class="card-title"> Chiken kababs </h5>
+                          <p> 180 /-</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Chiken kabab',180)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                    <div class="col-2">
+                      <div style="width: 1500px;height: 100px;">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                          <img src="/images/momms.jpg" class="img" style="width: 90px;height: 90px;"/>
+
+                          <h5 class="card-title"> Momos (Steamed) </h5>
+                          <p> 160 /- (4pcs)</p>
+                          <button type="button" class="btn btn-primary" onclick="addToCart('Momos',160)">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+                  </div><br><br><br><br><br><br>
+                  <hr>
+    <!-- -------------------------------end of third row--------------------------------- -->
+    
+    
+    
+    
+                    <div class="row">
+    
+                      <h2>MAINCOSE</h2><br><br>
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/omlete.jpg" class="img" style="width: 90px;height: 90px;"/>
+        
+                            <h5 class="card-title"> Pakisthani omlet </h5>
+                            <p> 140 /-</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Pakisthani omlet',140)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/beefbiriyani.jpg" class="img" style="width: 90px;height: 90px;"/>
+                            
+                            <h5 class="card-title"> Beef biriyani </h5>
+                            <p> 180 /- </p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Beef biriyani',180)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/beffmndi.jpg" class="img" style="width: 90px;height: 90px;"/>  
+      
+                            <h5 class="card-title">Beef mandhi </h5>
+                            <p> 340 /- (4pcs)</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Beef mandhi',340)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/chiknmndi.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                            <h5 class="card-title"> Chiken mandhi</h5>
+                            <p> 290 /- (3pcs)</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Chiken mandhi',290)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/eggbiriyani.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                            <h5 class="card-title"> Egg biriyani </h5>
+                            <p> 180 /-</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Egg biriyani',180)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/ghee rice.jpg" class="img" style="width: 90px;height: 90px;"/>
+
+                            <h5 class="card-title"> Malabari ghee rice </h5>
+                            <p> 120 /-</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Malabari ghee rice',120)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                    </div><br><br><br><br><br><br>
+    
+                    <div class="row">
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/grilled.jpg" class="img" style="width: 90px;height: 90px;"/>
+        
+                            <h5 class="card-title"> Grilled chiken </h5>
+                            <p> 240 /-</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Grilled chiken',240)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/garlicchikn.jpg" class="img" style="width: 90px;height: 90px;"/>
+                            
+                            <h5 class="card-title"> Garlic chiken </h5>
+                            <p> 130 /- </p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Garlic chiken',130)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/chikenmeeels.jpg" class="img" style="width: 90px;height: 90px;"/>  
+      
+                            <h5 class="card-title"> Non-veg meals </h5>
+                            <p> 200 /- </p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Non-veg meals',200)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/broasted.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                            <h5 class="card-title"> Broasted chiken</h5>
+                            <p> 290 /- (12pcs)</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Broasted chiken',290)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/beefribs.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                            <h5 class="card-title"> Egg biriyani </h5>
+                            <p> 180 /-</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Egg biriyani',180)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/befshwrma.jpg" class="img" style="width: 90px;height: 90px;"/>
+
+                            <h5 class="card-title"> Beef shawarma </h5>
+                            <p> 120 /-</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Beef shawarma',120)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                    </div>br><br><br><br><br><br>
+                    <hr>
+    
+    
+    
+     <!-- -------------------------------end of fourth section--------------------------------- -->
+    
+    
+    
+    
+                    <div class="row">
+    
+                      <h2>DESSERT</h2><br><br>
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/cake.jpg" class="img" style="width: 90px;height: 90px;"/>
+        
+                            <h5 class="card-title"> Milk cake </h5>
+                            <p> 540 /-</p>
+                            <button type="button" class="btn btn-primary " onclick="addToCart('Milk cake',540)" >Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/cheesecake.jpg" class="img" style="width: 90px;height: 90px;"/>
+                            
+                            <h5 class="card-title"> Cheescake </h5>
+                            <p> 480 /- </p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Chees cake',480)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/milkcake.jpg" class="img" style="width: 90px;height: 90px;"/>  
+      
+                            <h5 class="card-title"> Vanila cake </h5>
+                            <p> 340 /- (4pcs)</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Vanila cake',340)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/vnnilicc.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                            <h5 class="card-title"> Vanila icecream</h5>
+                            <p> 120 /- (5scoop)</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Vanila icecream',120)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/strwbryicc.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                            <h5 class="card-title"> Strawberry icecream </h5>
+                            <p> 120 /- (5scoop)</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Strawberry icecream',120)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/vanilacake.jpg" class="img" style="width: 90px;height: 90px;"/>
+        
+                            <h5 class="card-title">Icecream cake</h5>
+                            <p> 220 /-</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Icecream cake',220)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                    </div><br><br><br><br><br><br>
+    <!-- -----------------------------------------end of fifthsection----------------------------------------------------- -->
+                    <hr>
+                    <h2>SALADS</h2><br><br>
+                    <div class="row">
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/curdsalad.jpg" class="img" style="width: 90px;height: 90px;"/>
+        
+                            <h5 class="card-title"> Curd salad </h5>
+                            <p> 60 /-</p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Curd salad',60)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/corsalad.jpg" class="img" style="width: 90px;height: 90px;"/>
+                            
+                            <h5 class="card-title">Corn salad </h5>
+                            <p> 90 /- </p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Corn salad',90)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/porksoup.jpg" class="img" style="width: 90px;height: 90px;"/>  
+      
+                            <h5 class="card-title"> Sausage salas</h5>
+                            <p> 90 /- </p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Sausage salad',90)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+        
+                      <div class="col-2">
+                        <div style="width: 1500px;height: 100px;">
+                          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="/images/vegsalad.jpg" class="img" style="width: 90px;height: 90px;"/>
+      
+                            <h5 class="card-title"> Green salad</h5>
+                            <p> 90 /- </p>
+                            <button type="button" class="btn btn-primary" onclick="addToCart('Green salad',90)">Add to cart</button>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                    
+                    
+                    
+            </div><br><br><br><br><br><br>
+            <hr>
+            <br><br>
+
+
+
+
+<!-- =======================================================================================cart section======================================================================================== -->
+
+        <div class="container text-center text-light" id="cartfo">
+
+            <h2>Click to check your cart</h2>
+            <br>
+            <button class="btn btn-primary" onclick="showCart()" id="cartfo1"> Click to show cart</button><br><br><br><br><br>
+        </div>
+
+        <div id="div4cart">
+
+
+        </div>
+
+
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+       <center> --created by sreelaya--  </center>
+        </div>
+         
+    </body>
+</html>
